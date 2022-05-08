@@ -16,7 +16,7 @@ export default {
     }
   },
    created() {
-            let apiURL = 'http://localhost:4000/api';
+            let apiURL = 'https://monikahousing.herokuapp.com/api';
             axios.get(apiURL).then(res => {
                 this.propertie = res.data;
                 this.properties = this.propertie[0].House

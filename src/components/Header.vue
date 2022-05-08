@@ -16,17 +16,17 @@
         <a class="nav-icon">Housing Market</a>
  <ul class="sub-nav" id="myTopnav">
     <li>
-            <a href="javascript:void(0);" class="nav-link icon" style="font-size:15px;"  v-on:click="myFunction()">&#9776;</a>
+            <a href="javascript:void(0);" class="nav-link icon" style="font-size:18px;"  v-on:click="myFunction()">&#9776;</a>
        </li>
         
           <li class="nav-item">
             <router-link class="nav-link " to="/"> Home </router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link " to="/about"> About us </router-link>
+            <router-link class="nav-link " to="/about"> About Us </router-link>
           </li>
            <li class="nav-item">
-            <router-link class="nav-link " to="/properties"> properties </router-link>
+            <router-link class="nav-link " to="/properties"> Properties </router-link>
           </li>
          
         </ul>
