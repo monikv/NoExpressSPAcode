@@ -1,12 +1,10 @@
 <script >
- import axios from "axios";
+import axios from "axios";
 import HouseCard from './HouseCard.vue';
 
 export default {
   name: 'App',
   components: {
-    // 2 register the component 
-  
     HouseCard
 },
 
@@ -16,10 +14,9 @@ export default {
     }
   },
    created() {
-            let apiURL = 'https://monikahousing.herokuapp.com/api';
+            let apiURL = 'https://noexpressjs.herokuapp.com/api';
             axios.get(apiURL).then(res => {
-                this.propertie = res.data;
-                this.properties = this.propertie[0].House
+                this.properties = res.data.House;
             }).catch(error => {
                 console.log(error)
             });
@@ -39,6 +36,7 @@ export default {
         </div>
    </div>
 </template>
+
 <style scoped>
 .rows{
       display: flex;
